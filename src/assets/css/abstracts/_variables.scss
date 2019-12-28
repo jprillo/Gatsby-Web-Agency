@@ -1,0 +1,27 @@
+
+
+.add-border{
+    border-bottom: 2px solid $secondary-color;
+}
+.mobile-only{
+    
+    @include breakpoint(md){
+      display: none;
+      
+  }
+  }
+
+  .top-margin{
+      margin-top: 5vh;
+    @include breakpoint(md){
+        margin: 0;
+        
+    }
+
+  }
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+#top-nav-wrap{
+background: $top-nav-color;
+@include breakpoint(xs){
+    display: none;
+}
+    ul{
+        @include flex-space;
+       li{
+           padding: .5em; 
+           a{
+           color: $top-nav-text-color;
+           font-size: 20px; 
+               
+           }
+       }
+    }
+}
+#top-nav-wrap > ul > li> a:hover {
+    color: $hover-color;
+}
+#top-nav-wrap > ul > li> a:active {
+    color: $active-color;
+}

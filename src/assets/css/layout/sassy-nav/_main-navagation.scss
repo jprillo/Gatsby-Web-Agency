@@ -1,0 +1,151 @@
+.navagation-wrap.mobile-wrap #hamburger-wrap{
+  position: fixed;
+  z-index: 1000;
+  right: 25px;
+} /*Hack for keeping hamburger in place  */
+
+
+#main-nav-wrap{
+    @include flex-space;
+    padding:  .5em .5em .25em;
+    background: $nav-color;     
+    align-items: center;  
+    
+    @include breakpoint(md){
+      padding:  1em;
+    }
+    
+}
+
+
+.logo-wrap a{
+    color: $nav-text-color;
+    font-size: 30px;
+    font-family: $primary-font;
+    img {
+      width: 100px;
+   
+    @include breakpoint(md){
+      width: 200px;
+    }
+  }
+    &:hover{
+      opacity: .5;
+    }
+}
+.mobile-phone{
+  margin-left: 25px;
+  @include breakpoint(md){
+    display: none;
+  }
+ 
+}
+.mobile-only{
+  @include breakpoint(md){
+    display: none;
+    
+}
+.responsive-contact a{
+  display: none;
+
+  @include breakpoint(md){
+    display: block;
+    padding: .5em 2em; 
+    border: 3px solid $nav-contact-color;
+    color: $nav-contact-text-color;
+    font-family:$primary-font;
+    &:hover {
+      
+      font-weight: bold;
+      background: $hover-color2;
+      border-color: $hover-color2;
+    }
+    &:active {
+      color: $active-color;
+    }
+
+  }    
+  
+  .nav{
+    display: none;
+  @include breakpoint(md){
+      width: auto;
+      position: relative;  
+      
+      display: flex;       
+      flex-direction: row;
+      height: auto;  
+      background: inherit;
+
+  }
+
+}
+.nav a{
+  @include breakpoint(md){
+      font-family: $secondary-font;
+      font-weight: 300;
+      color: $nav-text-color;
+      font-size: 18px;
+      line-height: 120%;
+      margin: .5em;
+      padding: .5em;
+  }
+  &:hover {
+    color: $hover-color;
+  }
+  &:active {
+    color: $active-color;
+  }
+
+}
+}
+}
+@import 'hamburger';
+
+.responsive-nav.mobile-nav .nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 18vh 10% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;  
+    background: green;
+    z-index: 1000;
+    @include breakpoint(md){
+        padding:0;
+        width: auto;
+        position: relative;               
+        flex-direction: row;
+        height: auto; 
+        background: inherit;
+    }
+  }
+  .responsive-nav.mobile-nav .nav a{
+  
+    font-family: $secondary-font;
+    font-weight: bold;
+    color: $nav-text-color;
+    font-size: 35px;
+    line-height: 120%;
+    margin:  40px 0;    
+    @include breakpoint(md){       
+        font-weight: 300;     
+        font-size: 18px;       
+        margin: .5em;
+        padding: .5em;
+    }
+    &:hover {
+      color: $hover-color;
+    }
+    &:active {
+      color: $active-color;
+    }
+  
+  }
+
+ 
+  #active{
+    color: $active-color;
+}

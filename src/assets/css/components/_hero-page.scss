@@ -1,0 +1,634 @@
+
+.navbar{
+  padding: 0;
+  @include breakpoint(md){
+    padding: 0 5% ;
+  }
+  
+}
+
+.hero-page{
+  padding: 10%;  
+  background-color: $primary-color;
+  color: white; 
+ 
+  
+@include breakpoint(md){
+  padding: 10% 15% ;
+}
+
+}
+
+  .primary-button{
+    font-size: 23px;
+    margin-top: 1.5em; 
+    @include breakpoint(sm){
+      font-size: 26px;     
+   }
+
+    @include breakpoint(md){
+      font-size: 30px; 
+      margin-top: 2em; 
+        
+       
+    }  
+    a{
+      color:white;
+      font-family: $primary-font;
+      background: $secondary-color;
+      padding: .25em 1.5em;
+      margin: .25em 0;
+      border:solid 3px $secondary-color;
+      &:hover{
+      background: $hover-color2;
+      border-color:$hover-color2;
+      }
+    }
+  }
+
+  .secondary-button{
+    font-size: 22px;
+    margin-top: 1rem; 
+    @include breakpoint(sm){
+      font-size: 26px;     
+   }
+    
+    @include breakpoint(md){
+      font-size: 30px;  
+      margin-right: 1em;  
+      margin-top: 2em;
+    }  
+    a{
+      color:white;
+      border:solid 3px white;
+      padding: .25em 1.5em;
+      margin: .25em 0;
+      font-family: $primary-font;
+      &:hover{
+      background: $hover-color2;
+      border-color:$hover-color2;
+      }
+    }
+  }
+  #left-button{
+    background: inherit;
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+    &:hover{
+      background: $primary-color;
+      border: 2px solid $primary-color;
+      }
+    @include breakpoint(md){
+    margin-left: 1em;
+
+    
+    }
+  }
+
+  .menu{
+    .card{
+    height: 300px;
+    background: $primary-color;
+    padding: 10px;
+    margin-top: 10px;
+
+@include breakpoint(md){
+margin: 0 10px;
+padding: 5%;
+
+  
+  }
+}
+  }
+
+.about{
+  background: $primary-color;
+  h3{
+    color: white;
+  }
+  .card{
+  height: 400px;
+  background: $secondary-color;
+  margin-top: 5%;
+  
+  @include breakpoint(md){
+  margin: 0 5%;
+
+    
+    }
+  
+ 
+  
+}
+}
+
+.quarters{
+  background: $secondary-color;
+  color: white;
+  .card{
+    height: 100px;
+    background: $primary-color;
+    margin: 20px 0;
+ 
+    @include breakpoint(md){
+      margin: 0 10px;
+   }
+  }
+}
+
+.cta-oneline{
+  background: black;
+  padding: 10% 5% 10% 10%;
+  @include breakpoint(md){
+    text-align: center;
+    padding: 5%  10% ;
+ }
+  
+  p{
+    margin: 0 30px 0 0 ;
+    font-size: 30px;
+    font-family:$primary-font;
+    color: white;
+    @include breakpoint(md){
+           font-size: 50px;
+        }
+      }
+  .cta-button{
+    margin-top: 30px;
+    &:hover{
+      opacity: .5;
+    }
+    @include breakpoint(md){
+ 
+      margin-top: 20px;
+      
+   }
+  }
+  a{
+    border: solid white;
+    padding: .5em 1em;
+    color: white;
+    font-size: 16px;
+    font-family: $primary-font;
+ 
+ 
+    
+    @include breakpoint(md){
+ 
+      font-size: 20px;
+      
+   }
+    
+  }
+
+}
+.about-jason{
+  background: #fff2f2;
+  padding: 20px (1/6)*100%;
+  h3{
+    margin-bottom: 1em;
+    color:#ff0000;
+    @include breakpoint(md){
+     
+    }
+  }
+.card{
+  margin: 1em 0 0 0;
+}
+}
+
+.about-me{
+  background: inherit;
+  @include breakpoint(md){
+    padding:50px (1/6* 100%);
+  }
+ 
+  h3{
+    font-size: 40px;
+    color: $primary-color;
+    @include breakpoint(md){
+     font-size: 50px;    
+   }
+  
+  }
+  
+  .card{
+    img{
+      padding: 10% 10% 0; 
+      width: 100%;
+      height: 100%;   
+      object-fit: cover;   
+    @include breakpoint(md){
+      padding: 0;      
+   }
+    }
+    div{
+      padding: 10%;
+    }
+  }
+}
+
+.work-wrap{
+  padding: 5% 15%;
+ 
+  .flex{
+ 
+    width: 100%;
+    margin-bottom: 5%;
+  
+  
+ 
+  }
+}
+.work-image{
+background-position: center;
+margin: 1em 1em;
+  height: 300px; 
+  
+
+
+}
+.work-describe{
+ padding-left: 1em;
+ 
+}
+.cat{font-size: 22px; padding: 0 1em; margin: 0; width: 60%; color: white;
+  @include breakpoint(md){
+   width:40%;      
+ }
+}
+
+.websites{
+  .work-image{
+    border: solid 2px #ff0000;
+    .cat{
+      background:#ff0000;
+    }
+
+  }
+ 
+}
+.brands{
+  .work-image{
+    border: solid 2px orange;
+    .cat{
+      background:orange;
+    }
+
+  }
+ 
+}
+.ill{
+  .work-image{
+    border: solid 2px darkgrey;
+    .cat{
+      background:darkgrey;
+    }
+
+  }
+ 
+}
+.filters{
+  background: black;
+  button{
+    border: none;
+    background: inherit;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: $primary-font;
+    cursor: pointer;
+    margin: 1em;
+    &:hover{
+      color: #ff0000;
+    }
+    @include breakpoint(md){
+      font-size: 20px;
+    }
+
+  }
+}
+.interior-heropage{
+  padding: 15vh (100%/12)*3 5vh 20vw;
+  color: white;  
+  
+  @include breakpoint(sm){
+    padding: 25vh 10% 5vh (100%/12)*4;
+      
+ }
+ @include breakpoint(md){
+  padding: 25vh 10% 5vh (100%/12)*4;
+    
+}
+
+.social-media-contain{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 30vh;
+  z-index: 0;
+ 
+
+  @include breakpoint(md){
+    display: flex;
+    
+    position: absolute;
+    right: 0;
+    top: 50vh;
+    margin: .5em;
+      
+  }
+
+ a{
+   margin: .5em 0;
+   img{
+     width: 70%;
+     @include breakpoint(md){
+      width: 100%;
+            
+        }
+   }
+
+ }
+ 
+
+}
+ 
+  h1{
+    font-family:$primary-font;
+    font-size: 35px;
+    font-weight:900;
+    @include breakpoint(sm){
+      font-size: 50px;     
+   }
+    @include breakpoint(md){
+      font-size: 50px;     
+   }
+  }
+}
+
+.jason-heropage{
+  padding: 15vh (100%/12)*3 15vh 20vw;
+  color: white;  
+  
+  @include breakpoint(sm){
+    padding: 25vh 10% 25vh (100%/12)*4;
+      
+ }
+ @include breakpoint(md){
+  padding: 25vh 10% 25vh (100%/12)*4;
+    
+}
+
+.social-media-contain{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 30vh;
+  z-index: 0;
+ 
+
+  @include breakpoint(md){
+    display: flex;
+    
+    position: absolute;
+    right: 0;
+    top: 50vh;
+    margin: .5em;
+      
+  }
+
+ a{
+   margin: .5em 0;
+   img{
+     width: 70%;
+     @include breakpoint(md){
+      width: 100%;
+            
+        }
+   }
+
+ }
+ 
+
+}
+ 
+  h1{
+    font-family:$primary-font;
+    font-size: 35px;
+    font-weight:900;
+    @include breakpoint(sm){
+      font-size: 50px;     
+   }
+    @include breakpoint(md){
+      font-size: 60px;     
+   }
+  }
+}
+
+
+.my-work{
+  padding: 60px (1/12)*100%;
+  text-align: center;
+  color: white;
+  background: black;
+  @include breakpoint(md){
+    padding: 100px (1/12)*100%;    
+ }
+
+  .flex{
+    margin-top: 3em;
+  }
+  img{
+    width:100%;
+    height: 200px;
+    object-fit: fill;
+    &:hover{
+      opacity: .5; 
+    }
+    @include breakpoint(sm){
+      height: 300px;
+   }
+   
+   @include breakpoint(md){
+    height: 250px;
+ }
+
+  }
+ .card{
+   margin-bottom: 3em;
+   text-align: left;
+   
+   
+   @include breakpoint(md){
+     
+    margin: 1em;  
+    height: 500px;
+    
+ }
+
+ }
+ p{
+   font-weight: 200;
+   text-align: center;
+   
+ }
+  a{
+    color: $secondary-color;
+    text-decoration: underline;
+    align-self: flex-end;
+    
+   
+    &:hover{
+      color: $active-color;
+    }
+    &:active{
+      opacity: .3;
+    }
+  }
+}
+
+.flex-3{
+  display: flex;
+  flex-direction: column;
+  @include breakpoint(sm){
+    flex-direction: row;
+  
+  }
+}
+.features{
+  padding: 10% (2/12)*100%;
+  background: #fff2f2;
+  @include breakpoint(md){
+    padding: 10% (1/12)*100%;
+
+ }
+ @include breakpoint(lg){
+  padding: 10% (2/12)*100%;
+
+}
+
+  .card{
+    padding-right: 10%;
+    padding-bottom: 5%;
+    margin-top: 30px;
+  }
+.feature-content{
+padding-right: (1/12)*100%;
+h3{
+  font-size: 40px;
+  font-weight: bolder;
+  font-family:$primary-font;
+  padding: .5em 0;
+  @include breakpoint(md){
+    font-size: 54px;
+ }
+
+}
+}
+
+
+}
+
+
+.scrolltotop{
+  display: flex;  
+  font-family: milkshake;
+  margin: 1em 2em;
+
+  justify-content: flex-end;
+  @include breakpoint(md){
+    font-size: 30px;
+  }
+  a{
+    
+  
+  &:hover{
+    color: $secondary-color;
+    cursor: pointer;
+  }
+}
+}
+
+
+.fb-mobile{
+  display: block;
+  @include breakpoint(md){
+   display: none;
+ }
+}
+.fb-responsive{
+  display: none;
+  @include breakpoint(md){
+    display: block;
+ }
+}
+
+.blog-wrap{
+  padding: 5% (2/12)*100%;
+  h3{
+    font-size: 30px;
+  }
+  .blog-posts{
+    margin-right: 2em;
+  }
+  .feature-post{
+    margin-bottom: 3em;
+    
+  }
+  .archived-posts{
+    .post{
+        margin-right: 2em;
+    }
+  }
+  
+}
+
+.blog-heropage{
+  
+    padding: 10vh (100%/12)*3 10vh 20vw;
+    color: white;  
+   a{
+     color: black;
+   }
+    h1{
+      font-family:$primary-font;
+      font-size: 35px;
+      font-weight:900;
+      @include breakpoint(sm){
+        font-size: 50px;     
+     }
+      @include breakpoint(md){
+        font-size: 70px;     
+     }
+    }
+
+  
+   @include breakpoint(md){
+    padding: 15vh 10% 10vh (100%/12)*4;
+      
+  }
+}
+
+.about-main{
+  margin: 20px;  height: 100vh; text-align: center;
+  img{
+    width: 100%;
+    @include breakpoint(md){
+      width: 40%;
+        
+    }
+  }
+}
+.post{
+  border: solid 1px black;
+  &:hover{
+   border: solid 3px $secondary-color;
+  }
+  a{
+    color: black;
+   
+  }
+}

@@ -1,0 +1,40 @@
+.land-about{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    height: 100vh;
+    padding: 10% 10%;
+
+    .content{
+        width: 45%;
+        padding: 3em;
+        height: 350px;
+        background: $primary-color;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 20px;
+        }
+
+    }
+    .image-wrap{
+        width: 50%;
+        height: 400px;
+      
+        background: green;
+
+        img{
+            width: 100%;
+            object-fit: cover;
+          
+        }
+      
+     
+      
+
+    }
+}
