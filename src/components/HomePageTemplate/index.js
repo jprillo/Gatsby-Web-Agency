@@ -8,7 +8,7 @@ const HomePageTemplate = ({
   title,
   heading,
   description,
-  cta,
+  cover,
   offerings,
   meta_title,
   meta_description,
@@ -19,23 +19,34 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <div className="beach-back hero-page ">
-     <div className="hero-content">
-     
-      
-        <h2>
-           
-           {title}
-           
-          </h2>
- 
-        <h1>{meta_description}</h1>
-    
-        <div className="primary-button">
+
+<section>
+<div className='hero-page'>
+  <div className="flex">
+    <div className="col-6">
+      <h1>{title}</h1>
+      <h2>{meta_description}</h2>
+      <div className="flex max">
+      <div className="primary-button">
             <a href="/contact">CONTACT</a>
         </div>
+       
+      </div>
+
+ 
     </div>
-</div>
+    <div className="col-6 hero-image">
+    <img src={cover} alt="Smiley face"></img>
+    </div>
+
+  </div>
+  
+  </div>
+
+
+
+</section>
+
 
     <section className='section section--gradient'>
       <div className='container'>
@@ -66,9 +77,9 @@ HomePageTemplate.propTypes = {
   title: PropTypes.string,
   meta_title: PropTypes.string,
   meta_description: PropTypes.string,
+  cover: PropTypes.string,
   heading: PropTypes.string,
-  description: PropTypes.string,
-  cta: PropTypes.string,
+  description: PropTypes.string,  
   offerings: PropTypes.shape({
     blurbs: PropTypes.array,
   }),

@@ -1,14 +1,16 @@
 ---
 templateKey: 'home-page'
-title: Need a New Website?
+title: Web Design and Development
 meta_title: Home | Formal Flamingo Web Design
 meta_description: >-
-  Melbourne FL Web Design and Development.
-heading: Fuck You
+  Give your business a leg up with a great website.
+heading: test heading
 description: >-
   Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
   adipisci velit...
-cta: Fuck
+
+cover: /img/flamingo-illustration.svg
+
 offerings:
   blurbs:
     - image: /img/search-engine-optimization.png

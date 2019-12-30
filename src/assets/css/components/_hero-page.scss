@@ -6,28 +6,29 @@
   }
   
 }
-
+.hero-image{
+  text-align:center;
+}
 .hero-page{
-  padding: 10%;  
-  background-color: $primary-color;
+  padding: 10% 10% 10% 15%;  
+  background-color: #1B0F0F;
   color: white; 
- 
-  
+
 @include breakpoint(md){
-  padding: 10% 15% ;
+  padding: 5% 12% ;
 }
 
 }
 
   .primary-button{
-    font-size: 23px;
-    margin-top: 1.5em; 
+    font-size: 20px;
+    margin-top:  1.5em; 
     @include breakpoint(sm){
-      font-size: 26px;     
+      font-size: 22px;     
    }
 
     @include breakpoint(md){
-      font-size: 30px; 
+      font-size: 22px; 
       margin-top: 2em; 
         
        
@@ -35,10 +36,10 @@
     a{
       color:white;
       font-family: $primary-font;
-      background: $secondary-color;
+      background: $primary-color;
       padding: .25em 1.5em;
       margin: .25em 0;
-      border:solid 3px $secondary-color;
+      border:solid 3px $primary-color;
       &:hover{
       background: $hover-color2;
       border-color:$hover-color2;

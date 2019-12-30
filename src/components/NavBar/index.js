@@ -12,7 +12,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             }
         `}
     render={data => (
-      <nav className='navbar is-fixed-top is-black'  aria-label='main navigation'>
+      <nav className='navbar is-fixed-top is-primary'  aria-label='main navigation'>
         <div className='navbar-brand'>
           <Link to='/' className='navbar-item'>
             <strong>Formal Flamingo</strong>
@@ -40,17 +40,15 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             <Link className='navbar-item' to='/blog'>
                             Blog
             </Link>
-            <div className='navbar-item'>
-              <div className='field is-grouped'>
-                <p className='control'>
+            
+              
                   <Link
-                    className='button is-danger'
+                    className=' navbar-item'
                     to='/contact'>
                             Contact Us
                   </Link>
-                </p>
-              </div>
-            </div>
+              
+            
           </div>
         </div>
       </nav>
