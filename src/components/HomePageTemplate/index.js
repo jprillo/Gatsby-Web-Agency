@@ -2,6 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Offerings from '../Offerings'
 import Testimonials from '../Testimonials'
+import CardOne from '../CardOne'
+import CardTwo from '../CardTwo'
 import PropTypes from 'prop-types'
 
 const HomePageTemplate = ({
@@ -9,10 +11,10 @@ const HomePageTemplate = ({
   heading,
   description,
   cover,
-  offerings,
+ 
   meta_title,
   meta_description,
-  testimonials,
+  
 }) => (
   <div>
     <Helmet>
@@ -46,30 +48,84 @@ const HomePageTemplate = ({
 
 
 </section>
+<section className="hero-about">
+<h3>We are passionate. We are creative. We are fade off.</h3>
+<div className="flex">
+  <div className="col-6">
+<img src="/img/creatures.svg" alt="ok"></img>
+  </div>
+  <div className="col-6 text-left">
+    <h4>Wordpress</h4>
+<p>Latin language, Latin lingua Latina, Indo-European language in the Italic group and ancestral to the modern Romance languages. ... The modern Romance languages developed from the spoken Latin  </p>
+  </div>
+</div>
+</section>
 
 
-    <section className='section section--gradient'>
-      <div className='container'>
+<section className="card-container">
+  <h3>Services</h3>
+<div className="flex">
+  
+<CardOne 
+title= "Super Fast"
+description= "dude knk i i idii ciddcid  k i i  kni ic  ci ci ol c "
+image= "\img\test-icon.png"
+alt= "bozo"
+link="google.com"
 
-        <div className='section'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='content'>
-                <div>
-                  <h3 className='has-text-weight-semibold is-size-2'>
-                    {heading}
-                  </h3>
-                  <p>{description}</p>
-                </div>
-                <Offerings gridItems={offerings.blurbs} />
-                <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
-                <Testimonials testimonials={testimonials} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+/>
+
+<CardTwo
+title= "Web Design"
+description= "dude knk k i i  kni ic  ci ci ol c ecbhdc ici scc sicqs j"
+image= "\img\coffee.png"
+alt= "bozo"
+link="google.com"
+
+/>
+
+<CardOne 
+title= "SEO"
+description= "dude knk k i i  kni ic  ci ci ol c "
+image= "\img\coffee.png"
+alt= "bozo"
+link="google.com"
+
+/>
+
+</div>
+<div className="flex">
+  
+<CardOne 
+title= "Super Fast"
+description= "dude knk i i idii ciddcid  k i i  kni ic  ci ci ol c "
+image= "\img\coffee.png"
+alt= "bozo"
+link="google.com"
+
+/>
+
+<CardOne 
+title= "Web Design"
+description= "dude knk k i i  kni ic  ci ci ol c "
+image= "\img\coffee.png"
+alt= "bozo"
+link="google.com"
+
+/>
+
+<CardOne 
+title= "SEO"
+description= "dude knk k i i  kni ic  ci ci ol c "
+image= "\img\coffee.png"
+alt= "bozo"
+link="google.com"
+
+/>
+
+</div>
+</section>
+
   </div>
 )
 
