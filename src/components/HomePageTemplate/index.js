@@ -136,10 +136,7 @@ HomePageTemplate.propTypes = {
   cover: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,  
-  offerings: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-  testimonials: PropTypes.array,
+
 
 }
 
